@@ -1,4 +1,4 @@
-package com.example.ebookreadertekmira;
+package com.example.ebookreadertekmira.Model;
 
 import com.google.gson.annotations.SerializedName;
 

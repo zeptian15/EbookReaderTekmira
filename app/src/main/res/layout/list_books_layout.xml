@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    app:cardCornerRadius="6dp"
+    android:layout_margin="4dp"
+    android:elevation="10dp"
+    tools:context=".ReadBooks">
+
+    <!--Membuat Container Untuk Konten Buku-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <!--Untuk ImageView Thumbnail Buku-->
+        <ImageView
+            android:id="@+id/img_item_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:background="@drawable/book"
+            android:layout_centerVertical="true"/>
+
+        <!--Layer hitam-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:background="@android:color/black" />
+
+        <!--TextView Judul Buku-->
+        <TextView
+            android:id="@+id/tv_judul_buku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Judul Buku"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:textStyle="bold|italic"
+            android:layout_margin="10dp"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,7 +1,10 @@
-package com.example.ebookreadertekmira;
+package com.example.ebookreadertekmira.PDF;
 
 import android.content.Context;
 import androidx.annotation.NonNull;
+
+import com.example.ebookreadertekmira.Services.PDFServices;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -28,8 +31,7 @@ public class PDFHelper {
         this.downloaded = downloaded;
         this.error = error;
 
-
-        pdfServices = RetrofitSettings.createRetrofitService(PDFServices.class, "http://10.0.9.194:8000/pdf/");
+        pdfServices = RetrofitSettings.createRetrofitService(PDFServices.class, "http://11.0.0.2:8000/pdf/");
         getPDF();
     }
 

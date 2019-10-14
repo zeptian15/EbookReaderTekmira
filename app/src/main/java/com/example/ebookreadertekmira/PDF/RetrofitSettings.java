@@ -1,11 +1,11 @@
-package com.example.ebookreadertekmira;
+package com.example.ebookreadertekmira.PDF;
 
 import java.util.concurrent.TimeUnit;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 
 public class RetrofitSettings {
-    public static String BASEURL = "http://10.0.9.194:8000/pdf/";
+    public static String BASEURL = "http://11.0.0.2:8000/pdf/";
 
     //This method establish the OkHtttpClient timers
     private static OkHttpClient client() {
@@ -21,7 +21,7 @@ public class RetrofitSettings {
      * bseUrl = The url that will be called to request the endpoints
      * */
     public static <T> T createRetrofitService(final Class<T> serviceClass, final String baseUrl) {
-        //Generate retrofit setting the baseUrl, client (OkHttp) and converterFactory (Gson)
+        //Generate retrofit Settings the baseUrl, client (OkHttp) and converterFactory (Gson)
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(baseUrl)
                 .client(client())
