@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="450dp"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="#2374D7" >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/pengaturan" />
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="68dp"
+            android:textSize="20dp"
+            android:text="Pengaturan"
+            android:textColor="#000000" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tntg"
+        android:layout_width="348dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginLeft="6dp"
+        app:cardBackgroundColor="#FFFF"
+        app:cardCornerRadius="20dp">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/about" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="7dp"
+        android:text="Tentang"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/arrow_right" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+      <ImageView
+        android:layout_width="450dp"
+        android:layout_height="450dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-140dp"
+        android:src="@drawable/background2" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Selamat Datang"
+        android:textColor="#FFFF"
+        android:textSize="18dp"
+        android:layout_marginLeft="220dp" />
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="220dp"
+            android:src="@drawable/buku" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:text="Baca Buku"
+            android:textSize="21dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="320dp" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="220dp"
+            android:src="@drawable/favorit" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:text="Buku Favorit"
+            android:textColor="#000000"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:layout_marginTop="320dp"
+            android:layout_marginLeft="210dp" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="420dp"
+            android:src="@drawable/laporan" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:text="Cari Laporan"
+            android:textColor="#000000"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="520dp" />
+
+        <ImageView
+            android:id="@+id/pgtrnn"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="420dp"
+            android:src="@drawable/pengaturan" />
+
+        <TextView
+            android:id="@+id/pgtrn"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:text="Pengaturan"
+            android:textColor="#000000"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="217dp"
+            android:layout_marginTop="520dp" />
+
+</RelativeLayout>

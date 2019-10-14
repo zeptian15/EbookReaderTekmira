@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="450dp"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="#2374D7" >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/about" />
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="68dp"
+            android:textSize="20dp"
+            android:text="Tentang"
+            android:textColor="#000000" />
+
+    </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/gradient" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="135dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="230dp"
+            android:layout_marginLeft="5dp"
+            android:text="Deskripsi :"
+            android:textSize="20dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="260dp"
+            android:layout_marginLeft="5dp"
+            android:text="Ini adalah aplikasi buku digital."
+            android:textSize="20dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="355dp"
+            android:layout_marginLeft="157dp"
+            android:text="Team"
+            android:textSize="20dp"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/man" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginLeft="230dp"
+            android:src="@drawable/man" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="490dp"
+            android:layout_marginLeft="50dp"
+            android:text="Ade Hidayat"
+            android:textSize="18dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="490dp"
+            android:layout_marginLeft="240dp"
+            android:text="Septian"
+            android:textSize="18dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="510dp"
+            android:layout_marginLeft="50dp"
+            android:text="- Frontend"
+            android:textSize="13dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="510dp"
+            android:layout_marginLeft="240dp"
+            android:text="- Backend"
+            android:textSize="13dp"
+            android:textColor="#000000" />
+
+
+</RelativeLayout>
+
