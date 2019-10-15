@@ -17,6 +17,7 @@ import com.bumptech.glide.request.RequestOptions;
 import com.example.ebookreadertekmira.DetailBooks;
 import com.example.ebookreadertekmira.Model.Book;
 import com.example.ebookreadertekmira.R;
+import com.example.ebookreadertekmira.SeeBook;
 
 import java.util.ArrayList;
 
@@ -49,9 +50,11 @@ public class RecyclerBooksAdapter extends RecyclerView.Adapter<RecyclerBooksAdap
             public void onClick(View v) {
                 Context context = v.getContext();
                 // Masuk Halaman Detail PDF
-                Intent DetailBook = new Intent(holder.itemView.getContext(), DetailBooks.class);
+                Intent DetailBook = new Intent(holder.itemView.getContext(), SeeBook.class);
                 DetailBook.putExtra("File", book.getFile());
                 DetailBook.putExtra("Judul", book.getJudul());
+                DetailBook.putExtra("Deskripsi", book.getDeskripsi());
+                DetailBook.putExtra("Gambar", book.getGambar());
                 context.startActivity(DetailBook);
             }
         });

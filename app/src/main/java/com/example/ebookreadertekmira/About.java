@@ -10,5 +10,10 @@ public class About extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
+
+        // Sembunyikan Action Bar
+        if(getSupportActionBar() != null){
+            getSupportActionBar().setTitle("Tentang Aplikasi");
+        }
     }
 }

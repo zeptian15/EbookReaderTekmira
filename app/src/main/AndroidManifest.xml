@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ebookreadertekmira">
-    <!-- Permissions -->
+    <!-- Permission untuk menggunakan Internet dan Storage pada Android -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,22 +13,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SeeBook"></activity>
+        <!-- Kumpulan Activity -->
+        <activity
+            android:name=".ReadBooks"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Settings"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".About"
+            android:parentActivityName=".Settings" />
+        <activity
+            android:name=".DetailBooks"
+            android:parentActivityName=".ReadBooks" />
 
-        <!--Kumpulan Activity-->
-        <activity android:name=".ReadBooks"
-            android:parentActivityName=".Home"></activity>
-
-        <activity android:name=".Settings"
-            android:parentActivityName=".Home"></activity>
-
-        <activity android:name=".About"
-            android:parentActivityName=".Settings"></activity>
-
-        <activity android:name=".DetailBooks"
-        android:parentActivityName=".ReadBooks"></activity>
-
-        <activity android:name=".Home"></activity>
-
+        <activity android:name=".Home" />
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,11 +37,5 @@
             </intent-filter>
         </activity>
     </application>
-
-    <!--Permission untuk menggunakan Internet dan Storage pada Android-->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

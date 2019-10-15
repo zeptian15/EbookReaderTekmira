@@ -6,90 +6,171 @@
     android:layout_height="match_parent"
     tools:context=".Home">
 
-      <ImageView
-        android:layout_width="450dp"
-        android:layout_height="450dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="-140dp"
-        android:src="@drawable/background2" />
+    <ImageView
+        android:id="@+id/Image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/gradient"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/logo_tekmira"/>
 
     <TextView
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:text="Selamat Datang"
-        android:textColor="#FFFF"
-        android:textSize="18dp"
-        android:layout_marginLeft="220dp" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:text="Aplikasi Buku Digital Pusat Penelitian dan Pengembangan Teknologi Mineral dan Batu Bara"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:fontFamily="@font/psr"
+        android:layout_toRightOf="@id/logo"
+        android:layout_alignBaseline="@id/logo"/>
 
+    <androidx.cardview.widget.CardView
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="20dp">
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="46dp"
-            android:layout_marginTop="220dp"
-            android:src="@drawable/buku" />
+    <!--Layout Button-->
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
 
-        <TextView
-            android:layout_width="120dp"
-            android:layout_height="30dp"
-            android:text="Baca Buku"
-            android:textSize="21dp"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:layout_marginLeft="35dp"
-            android:layout_marginTop="320dp" />
-
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="230dp"
-            android:layout_marginTop="220dp"
-            android:src="@drawable/favorit" />
-
-        <TextView
+        <LinearLayout
+            android:id="@+id/linearLayout1"
             android:layout_width="150dp"
-            android:layout_height="30dp"
-            android:text="Buku Favorit"
-            android:textColor="#000000"
-            android:textSize="21dp"
-            android:textStyle="bold"
-            android:layout_marginTop="320dp"
-            android:layout_marginLeft="210dp" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="46dp"
-            android:layout_marginTop="420dp"
-            android:src="@drawable/laporan" />
+            <ImageView
+                android:id="@+id/img_btn_baca_buku"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/buku" />
 
-        <TextView
+            <TextView
+                android:id="@+id/tv_baca_buku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Baca Buku"
+                android:textSize="18sp"
+                android:fontFamily="@font/psr"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
             android:layout_width="150dp"
-            android:layout_height="30dp"
-            android:text="Cari Laporan"
-            android:textColor="#000000"
-            android:textSize="21dp"
-            android:textStyle="bold"
-            android:layout_marginLeft="26dp"
-            android:layout_marginTop="520dp" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/linearLayout1"
+            android:layout_margin="5dp">
 
-        <ImageView
-            android:id="@+id/pgtrnn"
-            android:layout_width="80dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="230dp"
-            android:layout_marginTop="420dp"
-            android:src="@drawable/pengaturan" />
+            <ImageView
+                android:id="@+id/img_btn_buku_favorit"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/favorit"/>
 
-        <TextView
-            android:id="@+id/pgtrn"
-            android:layout_width="120dp"
-            android:layout_height="35dp"
-            android:text="Pengaturan"
-            android:textColor="#000000"
-            android:textSize="21dp"
-            android:textStyle="bold"
-            android:layout_marginLeft="217dp"
-            android:layout_marginTop="520dp" />
+            <TextView
+                android:id="@+id/tv_buku_favorit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Buku Favorit"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/psr"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/linearLayout1"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/img_btn_cari_laporan"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/laporan" />
+
+            <TextView
+                android:id="@+id/tv_cari_laporan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Laporan"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/psr"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/linearLayout3"
+            android:layout_below="@id/linearLayout2"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/img_btn_setting"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/about"/>
+
+            <TextView
+                android:id="@+id/tv_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Tentang App"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/psr"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Supported by : SMK Negeri 4 Bandung"
+        android:textColor="#fff"
+        android:fontFamily="@font/psr"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:layout_marginBottom="15dp"/>
 
 </RelativeLayout>

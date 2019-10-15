@@ -6,117 +6,122 @@
     android:layout_height="match_parent"
     tools:context=".About">
 
+    <ImageView
+        android:id="@+id/Image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/gradient"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo_tekmira"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerInParent="true"
+        android:text="Aplikasi Buku Digital Pusat Penelitian dan Pengembangan Teknologi Mineral dan Batu Bara"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:fontFamily="@font/psr"
+        android:layout_below="@id/logo"/>
+
     <androidx.cardview.widget.CardView
-        android:layout_width="450dp"
-        android:layout_height="60dp"
-        app:cardBackgroundColor="#2374D7" >
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_below="@id/Image">
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="45dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="7dp"
-            android:src="@drawable/about" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
 
-        <TextView
-            android:layout_width="110dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="68dp"
-            android:textSize="20dp"
-            android:text="Tentang"
-            android:textColor="#000000" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                android:src="@drawable/profil_septian"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Septian Ricky Maulana \nSMK Negeri 4 Bandung\nAndroid Dev | Web Dev "
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:fontFamily="@font/psr"/>
+
+        </LinearLayout>
+
 
     </androidx.cardview.widget.CardView>
 
-        <ImageView
+    <androidx.cardview.widget.CardView
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_below="@id/card_view">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/gradient" />
+            android:orientation="horizontal"
+            android:padding="10dp">
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="100dp"
-            android:layout_marginLeft="135dp"
-            android:src="@drawable/logo" />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ade Hidayat \nSMK Negeri 4 Bandung\nAndroid Dev | UI Designer"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:fontFamily="@font/psr"
+                android:textAlignment="viewEnd"
+                tools:ignore="RtlCompat" />
 
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="230dp"
-            android:layout_marginLeft="5dp"
-            android:text="Deskripsi :"
-            android:textSize="20dp"
-            android:textColor="#000000" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                android:src="@drawable/profil_ade"/>
 
-        <TextView
-            android:layout_width="300dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="260dp"
-            android:layout_marginLeft="5dp"
-            android:text="Ini adalah aplikasi buku digital."
-            android:textSize="20dp"
-            android:textColor="#000000" />
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="60dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="355dp"
-            android:layout_marginLeft="157dp"
-            android:text="Team"
-            android:textSize="20dp"
-            android:textColor="#000000" />
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="400dp"
-            android:layout_marginLeft="60dp"
-            android:src="@drawable/man" />
+    </androidx.cardview.widget.CardView>
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="400dp"
-            android:layout_marginLeft="230dp"
-            android:src="@drawable/man" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient"
+        android:layout_alignParentBottom="true"/>
 
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="490dp"
-            android:layout_marginLeft="50dp"
-            android:text="Ade Hidayat"
-            android:textSize="18dp"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="490dp"
-            android:layout_marginLeft="240dp"
-            android:text="Septian"
-            android:textSize="18dp"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="510dp"
-            android:layout_marginLeft="50dp"
-            android:text="- Frontend"
-            android:textSize="13dp"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="510dp"
-            android:layout_marginLeft="240dp"
-            android:text="- Backend"
-            android:textSize="13dp"
-            android:textColor="#000000" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Supported by : SMK Negeri 4 Bandung"
+        android:textColor="#fff"
+        android:fontFamily="@font/psr"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:layout_marginBottom="15dp"/>
 
 
 </RelativeLayout>

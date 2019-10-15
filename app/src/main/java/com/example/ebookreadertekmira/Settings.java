@@ -14,6 +14,11 @@ public class Settings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
+        // Sembunyikan Action Bar
+        if(getSupportActionBar() != null){
+            getSupportActionBar().hide();
+        }
+
             CardView cardView= (CardView) findViewById(R.id.tntg);
 
             cardView.setOnClickListener(new View.OnClickListener() {

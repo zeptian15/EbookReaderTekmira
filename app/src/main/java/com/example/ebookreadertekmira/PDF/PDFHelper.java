@@ -31,7 +31,7 @@ public class PDFHelper {
         this.downloaded = downloaded;
         this.error = error;
 
-        pdfServices = RetrofitSettings.createRetrofitService(PDFServices.class, "http://11.0.0.2:8000/pdf/");
+        pdfServices = RetrofitSettings.createRetrofitService(PDFServices.class, "http://10.0.9.194:8000/pdf/");
         getPDF();
     }
 

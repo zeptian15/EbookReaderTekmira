@@ -5,7 +5,7 @@ import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 
 public class RetrofitSettings {
-    public static String BASEURL = "http://11.0.0.2:8000/pdf/";
+    public static String BASEURL = "http://10.0.9.194:8000/pdf/";
 
     //This method establish the OkHtttpClient timers
     private static OkHttpClient client() {

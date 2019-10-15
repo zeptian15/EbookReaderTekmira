@@ -31,6 +31,11 @@ public class ReadBooks extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reads_books);
 
+        // Sembunyikan Action Bar
+        if(getSupportActionBar() != null){
+            getSupportActionBar().hide();
+        }
+
         rvBooks = findViewById(R.id.rv_books);
         rvBooks.setHasFixedSize(true);
 
@@ -40,7 +45,7 @@ public class ReadBooks extends AppCompatActivity {
         progressDialog.show();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://11.0.0.2:8000/api/v1/")
+                .baseUrl("http://10.0.9.194:8000/api/v1/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 

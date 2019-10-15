@@ -16,6 +16,6 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/logo" />
+        android:src="@drawable/logo_tekmira" />
 
 </RelativeLayout>

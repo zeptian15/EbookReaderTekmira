@@ -40,7 +40,7 @@
             tools:text="Judul Buku"
             android:textSize="24sp"
             android:textColor="#fff"
-            android:textStyle="bold|italic"
+            android:fontFamily="@font/psr"
             android:layout_margin="10dp"
             android:layout_alignParentBottom="true"/>
 
